@@ -30,7 +30,7 @@ public:
 -    `byte second`
 -    `byte minute`
 -    `byte hour`
--    `byte dow` (day of week 1-Sunday, 2-Monday, ... 7-Saturday)
+-    `byte dow` (day of week; 1-Sunday, 2-Monday, ... 7-Saturday)
 -    `byte day`
 -    `byte month`
 -    `byte year`
