@@ -10,7 +10,13 @@ alarms. (Please check the datasheet for more information.)
 
 ##Usage
 
+First step:
+
+Create a library called `DS3231` in your Arduino libraries directory.
+The place in my case is `~/Arduino/libraries/DS3231` then clone or copy files to the `DS3231` dir.
+
 Include **DS3231** library to your Arduino sketch.
+
 It is ready to use for basic usage as:
 - set RTC to an user defined sec, min, hour, day-of-week, day, month, year
 - get time and date from the RTC
@@ -35,7 +41,7 @@ public:
 
 ###Functions
   
--    `DS3231(byte)` // Use this contructor when your RTC has a different address.
+-    `DS3231(byte)` Use this contructor when your RTC has a different address.
 
     
 -    `void setRTC(byte, byte, byte, byte, byte, byte, byte)`
