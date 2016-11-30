@@ -17,10 +17,10 @@ It is ready to use for basic usage as:
 - get LCD printable time and date character array
 
 ###Variables
-  private:
+private:
 -    `byte RTC_addr` Address of RTC. 0x68 is the default address.
   
-  public:
+public:
 -    `byte second`
 -    `byte minute`
 -    `byte hour`
