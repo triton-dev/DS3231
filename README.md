@@ -18,32 +18,32 @@ It is ready to use for basic usage as:
 
 ###Variables
   private:
-    `byte RTC_addr` Address of RTC. 0x68 is the default address.
+-    `byte RTC_addr` Address of RTC. 0x68 is the default address.
   
   public:
-    `byte second`
-    `byte minute`
-    `byte hour`
-    `byte dow` (day of week 1-Sunday, 2-Monday, ... 7-Saturday)
-    `byte day`
-    `byte month`
-    `byte year`
-    `byte dec2bcd(byte)` DS3231 stores data in BCD format, these 2 functions
-    `byte bcd2dec(byte)` Convert values dec-to-bcd and bcd-to-dec values.
-    `char RTCtime[9]` This array contains the **time** for LCD print.
-    `char RTCdate[16]` This array contains the **date** for LCD print.
+-    `byte second`
+-    `byte minute`
+-    `byte hour`
+-    `byte dow` (day of week 1-Sunday, 2-Monday, ... 7-Saturday)
+-    `byte day`
+-    `byte month`
+-    `byte year`
+-    `byte dec2bcd(byte)` DS3231 stores data in BCD format, these 2 functions
+-    `byte bcd2dec(byte)` Convert values dec-to-bcd and bcd-to-dec values.
+-    `char RTCtime[9]` This array contains the **time** for LCD print.
+-    `char RTCdate[16]` This array contains the **date** for LCD print.
 
 ###Functions
   
-    `DS3231(byte)` // Use this contructor when your RTC has a different address.
+-    `DS3231(byte)` // Use this contructor when your RTC has a different address.
 
     
-    `void setRTC(byte, byte, byte, byte, byte, byte, byte)`
+-    `void setRTC(byte, byte, byte, byte, byte, byte, byte)`
     Set the RTC to the user defined timestamp.
     Values in order: 
     second, minute, hour, day-of-week (see dow), day, month, year
     
-    `void getRTC()`
+-   `void getRTC()`
     Ask full **time** and **date** data from RTC.
     This function must be called before you want to get time and date datas.
     This function refreshh date and time variables.
@@ -54,11 +54,11 @@ It is ready to use for basic usage as:
       your_variable = rtc.minute;
     `
     
-    `void getRTCtime()`
+-    `void getRTCtime()`
     This function create an LCD printable **time** data array.
     The result is in `RTCtime`.
     
-    `void getRTCdate()`
+-    `void getRTCdate()`
     This function create an LCD printable **date** data array.
     The result is in `RTCdate`.
     In _DS3231.cpp_ `switch(D)` cases contains the name-of-day abbreviations.
@@ -66,7 +66,7 @@ It is ready to use for basic usage as:
     but follow the sample please. 
     
     
-    `byte getRTC_addr()`
+-    `byte getRTC_addr()`
     This function returns your RTC address.
 
 ###Example to print to the LCD RTC time and date.
