@@ -16,7 +16,6 @@ class DS3231 {
     byte RTC_addr;
     byte dec2bcd(byte);
     byte bcd2dec(byte);
- 
   public:
     byte second;
     byte minute;
@@ -31,11 +30,6 @@ class DS3231 {
     ~DS3231();
     void setRTC(byte, byte, byte, byte, byte, byte, byte);
     void getRTC();
-   
 };
 
-
-
-
 #endif
-
